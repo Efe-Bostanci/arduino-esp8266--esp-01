@@ -43,6 +43,6 @@ void loop()
 {
   RemoteXY_Handler ();
 
-  digitalWrite(PIN_BUTTON_2, (RemoteXY.button_2 == 0) ? LOW : HIGH);
+  digitalWrite(PIN_BUTTON_2, (RemoteXY.button_2 == 0) ? LOW : HIGH); //RemoteXY nesnesinin button_2 elemanının verisine bakarak eğer 0 ise low değil ise high yapıyor PIN_BUTTON_2 yi
   digitalWrite(PIN_SWITCH_1, (RemoteXY.switch_1 == 0) ? LOW : HIGH);
 }
